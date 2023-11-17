@@ -1,0 +1,16 @@
+@import url(styles/header.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+:root {
+    --cor-preto: #000000;
+    --cor-cinza-escuro: #333333;
+    --cor-cinza-claro: #898989;
+    --cor-branco: #ffffff;
+    --cor-azul: #3374db;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

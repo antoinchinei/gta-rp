@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra e Venda de Carros Seminovos e Usados | Revendedoras de carros 🥇</title>
+    <script src="https://kit.fontawesome.com/a302c8b59b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="#"><img src="img/kavak-logo-ED77160EFF-seeklogo.com.svg" alt="Logo Kavak" class="cabecalho_logo-kavak"></a>
+
+        <input type="checkbox" id="menu" class="cabecalho_menu_botao">
+        <label for="menu" class="label__menu-botao">
+            <img class="cabecalho_menu" src="img/Captura de tela 2023-11-03 131506.png" alt="menu">
+        </label>
+        <div id="menu-icon" class="container_menu">
+            <ul class="menu__mobile">
+                <li class="menu-lista-header">
+                    <h3 class="cabecalho_menu-lista-titulo">Nós lhe damos as boas-vindas</h3>
+                    <p class="cabecalho_menu-lista-texto"></p>Crie uma conta ou faça login para assumir o controle de sua compra, venda ou financiamento.</p>
+                    <a href="#" class="cabecalho_menu-lista-botao">Cadastre-se</a>
+                </li>
+                <li class="menu-lista-links"><i class="fa-solid fa-car"></i>Comprar carro</li>
+                <li class="menu-lista-links link__vender-carro"><i class="fa-solid fa-money-bill"></i>Vender carro</li>
+                <li class="menu-lista-link">App Kavak</li>
+            
+                
+                <label for="menu__sobre-nos">
+                    <li class="menu-lista-link lista-link-sobre menu-icon-arrow"><p class="menu__dropdown__sobre-nos">Sobre Nós<i class="fa-solid fa-chevron-down"></i></p>
+                        <input type="checkbox" id="menu__sobre-nos" class="input__menu-sobrenos">
+                        <ul class="lista-label">
+                            <li class="lista-label-sobre">Onde estamos</li>
+                            <li class="lista-label-sobre">Guia de preços</li>
+                            <li class="lista-label-sobre">Blog</li>
+                        </ul>
+                    </li>
+                </label>
+                    
+                
+                <label for="menu__ajuda">
+                    <li class="menu-lista-link lista-link-sobre menu-icon-arrow" style="border-bottom: 0.5px solid #e5e5e5;"><p class="menu__dropdown__ajuda">Ajuda<i class="fa-solid fa-chevron-down"></i></p>
+                        <input type="checkbox" id="menu__ajuda" class="input__menu-ajuda">
+                        <ul class="lista-menu__ajuda">
+                            <li class="lista-label-topicos"><i class="fa-regular fa-circle-question"></i>Perguntas Frequentes</li>
+                            <li class="lista-label-topicos"><i class="fa-regular fa-comments"></i>Contato</li>
+                        </ul>
+                    </li>
+                </label>
+
+                
+                <label for="menu__pais">
+                    <li class="menu-lista-link menu-lista-link-arrow dropdown-pais"><p class="menu__país-dropdown">País<img src="img/br.png" alt="bandeira do brasil"></p>
+                        <input type="checkbox" id="menu__pais" class="input__menu-pais">
+                        <ul class="lista__menu-pais">
+                            <li class="menu-pais-pais">Brasil</li>
+                            <li class="menu-pais-pais">México</li>
+                            <li class="menu-pais-pais">Argentina</li>
+                            <li class="menu-pais-pais">Turquia</li>
+                        </ul>            
+                    </li>
+                </label>
+
+
+                <li class="menu-lista-titulo menu-lista-link-arrow">Filtrar por</li>
+
+                
+            <label for="menu__modelos">
+                <li class="menu-lista-link menu-lista-link-arrow dropdown-marcas"><p class="menu__modelos-dropdown">Marcas e modelos<i class="fa-solid fa-chevron-right"></i></p>
+                    <input type="checkbox" id="menu__modelos" class="input__menu-modelos">
+
+                    <ul class="lista-link-marcas">
+                        <h3 class="cabecalho_menu-lista-titulo">Marcas e modelos mais buscados</h3>
+                        <li class="lista-link-modelos"><img src="img/honda.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">Honda</a></li>
+                        <li class="lista-link-modelos">City</li>
+                        <li class="lista-link-modelos">Civic</li>
+                        <li class="lista-link-modelos">CR-V</li>
+                        <li class="lista-link-modelos">Fit</li>
+                    </ul>
+
+                    <ul class="lista-link-marcas">
+                        <li class="lista-link-modelos"><img src="img/fiat.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">Fiat</a></li>
+                        <li class="lista-link-modelos">Fastback</li>
+                        <li class="lista-link-modelos">Pulse</li>
+                        <li class="lista-link-modelos">Argo</li>
+                        <li class="lista-link-modelos">500</li>
+                    </ul>
+
+                    <ul class="lista-link-marcas">
+                        <li class="lista-link-modelos"><img src="img/chevrolet.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">Chevrolet</a></li>
+                        <li class="lista-link-modelos">Tracker</li>
+                        <li class="lista-link-modelos">Onix</li>
+                        <li class="lista-link-modelos">Cruze</li>
+                        <li class="lista-link-modelos">Spin</li>
+                    </ul>
+
+                    <ul class="lista-link-marcas">
+                        <li class="lista-link-modelos"><img src="img/volkswagen.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">Volkswagen</a></li>
+                        <li class="lista-link-modelos">Nivus</li>
+                        <li class="lista-link-modelos">T-Cross</li>
+                        <li class="lista-link-modelos">Gol</li>
+                        <li class="lista-link-modelos">Polo</li>
+                    </ul>
+
+                    <ul class="lista-link-marcas">
+                        <li class="lista-link-modelos"><img src="img/bmw.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">Bmw</a></li>
+                        <li class="lista-link-modelos">320l</li>
+                        <li class="lista-link-modelos">X1</li>
+                        <li class="lista-link-modelos">X6</li>
+                        <li class="lista-link-modelos">X4</li>
+                    </ul>
+
+                    <ul class="lista-link-marcas">
+                        <li class="lista-link-modelos"><img src="img/toyota.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">Toyota</a></li>
+                        <li class="lista-link-modelos">Yaris</li>
+                        <li class="lista-link-modelos">Corolla</li>
+                        <li class="lista-link-modelos">Etios</li>
+                        <li class="lista-link-modelos">Corolla Cross</li>
+                        <div class="lista-links-marcas__vertodos"><a>Ver todos</a><i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </ul>
+                </li>
+            </label>    
+            
+
+            <label for="menu__ano">
+                <li class="menu-lista-link"><p class="menu__ano-dropdown">Ano<i class="fa-solid fa-chevron-right"></i></p>
+                <input type="checkbox" id="menu__ano" class="input__menu-ano">
+
+                    <ul class="lista-link__ano">
+                        <h3 class="cabecalho_menu-lista-titulo">Ano</h3>
+                        <li class="lista-link-modelos">2023</li>
+                        <li class="lista-link-modelos">2022</li>
+                        <li class="lista-link-modelos">2021</li>
+                        <li class="lista-link-modelos">2020</li>
+                        <li class="lista-link-modelos">2019</li>
+                        <li class="lista-link-modelos">2018</li>
+                        <li class="lista-link-modelos">2017</li>
+                        <li class="lista-link-modelos">2016</li>
+                        <li class="lista-link-modelos">2015</li>
+                        <li class="lista-link-modelos">2014</li>
+                        <div class="lista-links-marcas__vertodos"><a>Anos anteriores</a><i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </ul>
+                </li>
+            </label>
+
+            <label for="menu__tipo">
+                <li class="menu-lista-link"><p class="menu__tipo-dropdown">Tipos<i class="fa-solid fa-chevron-right"></i></p>
+                <input type="checkbox" id="menu__tipo" class="input__menu-tipo">
+
+                <ul class="lista__tipos">
+                    <h3 class="cabecalho_menu-lista-titulo">Tipos</h3>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/hatchback.webp" alt="carro estilo hatchback" class="menu__tipo-iconcar">
+                        <a>Hatchback</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/suv.webp" alt="carro estilo SUV" class="menu__tipo-iconcar">
+                        <a>SUV</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/sedan.webp" alt="carro estilo sedan" class="menu__tipo-iconcar">
+                        <a>Sedã</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/coupe.webp" alt="carro estilo coupe" class="menu__tipo-iconcar">
+                        <a>Coupe</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/convertible.webp" alt="carro estilo Conversível" class="menu__tipo-iconcar">
+                        <a>Conversível</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/pickup.webp" alt="carro estilo pickup" class="menu__tipo-iconcar">
+                        <a>Pick up</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/minivan.webp" alt="carro estilo Minivan" class="menu__tipo-iconcar">
+                        <a>Minivan</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/wagon.webp" alt="carro estilo Wagon" class="menu__tipo-iconcar">
+                        <a>Wagon</a>
+                    </li>
+                </ul>
+                </li>
+            </label>
+
+
+
+            <label for="menu__loc">
+                <li class="menu-lista-link"><p class="menu__ano-dropdown">Localização<i class="fa-solid fa-chevron-right"></i></p>
+                <input type="checkbox" id="menu__loc" class="input__menu-loc">
+
+                    <ul class="lista-link__loc">
+                        <h3 class="cabecalho_menu-lista-titulo">Localização</h3>
+                        <li class="lista-link-modelos">São Paulo</li>
+                    </ul>
+                </li>
+            </label>
+
+            <label for="menu__mais-vendidos">
+                <li class="menu-lista-link menu-lista-link-arrow dropdown-marcas"><p class="menu__modelos-dropdown">Mais vendidos<i class="fa-solid fa-chevron-right"></i></p>
+                    <input type="checkbox" id="menu__mais-vendidos" class="input__menu-mais-vendidos">
+
+                    <ul class="lista-link__mais-vendidos">
+                        <h3 class="cabecalho_menu-lista-titulo">Marcas e modelos mais vendidos</h3>
+                        <li class="lista-link-modelos"><a class="lista-link-titulohonda">Seleção Kavak</a></li>
+                        <li class="lista-link-modelos">Hb20 2022</li>
+                        <li class="lista-link-modelos">Corolla 2022</li>
+                        <li class="lista-link-modelos">Onix 2022</li>
+                        <li class="lista-link-modelos">208 2022</li>
+                    </ul>
+
+                    <ul class="lista-link__mais-vendidos">
+                        <li class="lista-link-modelos"><a class="lista-link-titulohonda">Melhores Carros 2014 - 2015</a></li>
+                        <li class="lista-link-modelos">320l Sport 2014</li>
+                        <li class="lista-link-modelos">Cruze 2014</li>
+                        <li class="lista-link-modelos">Civic 2015</li>
+                        <li class="lista-link-modelos">Fusion 2015</li>
+                    </ul>
+
+                    <ul class="lista-link__mais-vendidos">
+                        <li class="lista-link-modelos"><a class="lista-link-titulohonda">Melhores Carros 2018 - 2021</a></li>
+                        <li class="lista-link-modelos">City 2018</li>
+                        <li class="lista-link-modelos">Rav4 2018</li>
+                        <li class="lista-link-modelos">Frontier 2021</li>
+                        <li class="lista-link-modelos">Hb20S 2021</li>
+                    </ul>
+
+                    <ul class="lista-link__mais-vendidos">
+                        <li class="lista-link-modelos"><a class="lista-link-titulohonda">Melhores Carros 2022 - 2023</a></li>
+                        <li class="lista-link-modelos">Corolla 2022</li>
+                        <li class="lista-link-modelos">Gol 2022</li>
+                        <li class="lista-link-modelos">Renegade 2022</li>
+                        <li class="lista-link-modelos">Eclipse 2023</li>
+                    </ul>
+
+                    <ul class="lista-link__mais-vendidos">
+                        <li class="lista-link-modelos"><a class="lista-link-titulohonda">Melhores Carros Por Preço</a></li>
+                        <li class="lista-link-modelos">Carro Baratos</li>
+                        <li class="lista-link-modelos">Carros até 100 mil</li>
+                        <li class="lista-link-modelos">Carros até 100 mil</li>
+                    </ul>
+
+                    <ul class="lista-link__mais-vendidos">
+                        <li class="lista-link-modelos"><a class="lista-link-titulohonda">Melhores Caminhonetes</a></li>
+                        <li class="lista-link-modelos">Caminhonete Ford</li>
+                        <li class="lista-link-modelos">Caminhonete Chevrolet</li>
+                        <li class="lista-link-modelos">Caminhonete Toyota</li>
+                        <li class="lista-link-modelos">Caminhonete Nissan</li>
+                        <div class="lista-links-mais-vendidos__vertodos"><a>Ver todos</a><i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </ul>
+                
+                </li>
+            </label> 
+                
+
+
+            </ul>
+        </div>
+
+
+
+        <div class="cabecalho__desktop">
+                <a>Comprar carro</a>
+                <a>Vender carro</a>
+                <a>App Navak</a>
+                
+                    <label for="menu__container-sobrenos">
+                        <div class="container__sobrenos lista-sobrenos__titulo">
+                        <p class="titulo__dropdown-sobrenos">Sobre nós<i class="fa-solid fa-chevron-down"></i></p>
+                        <input type="checkbox" id="menu__container-sobrenos" class="input__container-sobrenos">
+                            <ul class="lista-sobrenos__item">
+                                <li class="links__sobrenos">Onde estamos</li>
+                                <li class="links__sobrenos">Guia de preços</li>
+                                <li class="links__sobrenos">Blog</li>
+                            </ul>
+                        </div>
+                    </label>
+                
+
+                
+                <label for="menu__pais-linguas">
+                <div class="cabecalho-desktop__pais">
+                    <span><img src="img/br.png" alt="bandeira do brasil"></span>
+                    <input type="checkbox" id="menu__pais-linguas" class="input__pais-linguas">
+                    <ul class="cabecalho-lista__pais">
+                        <li class="lista-pais__link">México</li>
+                        <li class="lista-pais__link">Brasil</li>
+                        <li class="lista-pais__link">Argentina</li>
+                        <li class="lista-pais__link">Turkey</li>
+                    </ul>
+                </div>
+                </label>
+
+                <div class="container__cadastro">
+                    <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+                    <a href= "#" class="container__cadastro__texto">Cadastre-se</a>
+                </div>
+        </div>
+    </header>
+
+    <div class="container__cabecalho-secundario">
+        <div class="container__cabecalho-barrapesquisa">
+            <form class="container_cabecalho-pesquisa" action="#" method="get">
+                <input name="busca" autocomplete="off" class="cabecalho_pesquisa" type="text" placeholder="Busque por marca, modelo, ano, cor...">
+                <i style="color:#d0d1d1"class="fa-solid fa-magnifying-glass" onclick="enviarForm()"></i>
+            </form>
+        </div>
+
+        
+        <div class="container__cabecalho__menu-secundario">    
+            <li class= menu__filtrar>Filtrar por</li>
+  
+        
+
+            <label for="menu-dropdown__marcas-modelos">
+                <span class="menu-titulo__marcas-modelos"><p class="lista-titulo__modelos-marcas">Marcas e modelos<i class="fa-solid fa-chevron-down"></i></p>
+                    <input type="checkbox" id="menu-dropdown__marcas-modelos" class="input__menu-modelos-marcas">
+
+
+                    <li class="lista-links__marcas-modelos">
+                        <ul class="container__links__marcas-modelos">
+                            <li class="lista-link-modelos"><img src="img/honda.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">Honda</a></li>
+                            <li class="lista-link-modelos">City</li>
+                            <li class="lista-link-modelos">Civic</li>
+                            <li class="lista-link-modelos">CR-V</li>
+                            <li class="lista-link-modelos">Fit</li>
+                        </ul>
+
+                        <ul class="container__links__marcas-modelos">
+                            <li class="lista-link-modelos"><img src="img/fiat.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">Fiat</a></li>
+                            <li class="lista-link-modelos">Fastback</li>
+                            <li class="lista-link-modelos">Pulse</li>
+                            <li class="lista-link-modelos">Argo</li>
+                            <li class="lista-link-modelos">500</li>
+                        </ul>
+
+                        <ul class="container__links__marcas-modelos">
+                            <li class="lista-link-modelos lista-link-modelos__chevrolet"><img src="img/chevrolet.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">Chevrolet</a></li>
+                            <li class="lista-link-modelos">Tracker</li>
+                            <li class="lista-link-modelos">Onix</li>
+                            <li class="lista-link-modelos">Cruze</li>
+                            <li class="lista-link-modelos">Spin</li>
+                        </ul>
+
+                        <ul class="container__links__marcas-modelos">
+                            <li class="lista-link-modelos"><img src="img/volkswagen.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">Volkswagen</a></li>
+                            <li class="lista-link-modelos">Nivus</li>
+                            <li class="lista-link-modelos">T-Cross</li>
+                            <li class="lista-link-modelos">Gol</li>
+                            <li class="lista-link-modelos">Polo</li>
+                        </ul>
+
+                        <ul class="container__links__marcas-modelos">
+                            <li class="lista-link-modelos"><img src="img/bmw.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">BMW</a></li>
+                            <li class="lista-link-modelos">320l</li>
+                            <li class="lista-link-modelos">X1</li>
+                            <li class="lista-link-modelos">X6</li>
+                            <li class="lista-link-modelos">X4</li>
+                        </ul>
+
+                        <ul class="container__links__marcas-modelos">
+                            <li class="lista-link-modelos"><img src="img/toyota.svg" alt="logo da honda" class="lista-link-logohonda"><a class="lista-link-titulohonda">Toyota</a></li>
+                            <li class="lista-link-modelos">Yaris</li>
+                            <li class="lista-link-modelos">Corolla</li>
+                            <li class="lista-link-modelos">Etios</li>
+                            <li class="lista-link-modelos">Corolla Cross</li>
+                            <div class="lista-links-mais-vendidos__vertodos"><a>Ver todos</a><i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </ul>
+
+                    </li>
+                </span>
+
+            </label>
+
+            <label for="lista__menu__ano">
+                <li class="menu-lista-link"><p class="menu__ano-dropdown">Ano<i class="fa-solid fa-chevron-down"></i></p>
+                <input type="checkbox" id="lista__menu__ano" class="input__container__menu-ano">
+
+                    <ul class="container__lista-link__ano">
+                        <h3 class="cabecalho_menu-lista-titulo">Ano</h3>
+                        <li class="lista-link-modelos">2023</li>
+                        <li class="lista-link-modelos">2022</li>
+                        <li class="lista-link-modelos">2021</li>
+                        <li class="lista-link-modelos">2020</li>
+                        <li class="lista-link-modelos">2019</li>
+                        <li class="lista-link-modelos">2018</li>
+                        <li class="lista-link-modelos">2017</li>
+                        <li class="lista-link-modelos">2016</li>
+                        <li class="lista-link-modelos">2015</li>
+                        <li class="lista-link-modelos">2014</li>
+                        <div class="lista-links-marcas__vertodos"><a>Anos anteriores</a><i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </ul>
+                </li>
+            </label>
+
+            <label for="lista__menu__tipo">
+                <li class="menu-lista-link"><p class="menu__tipo-dropdown">Tipos<i class="fa-solid fa-chevron-down"></i></p>
+                <input type="checkbox" id="lista__menu__tipo" class="input__container__menu-tipo">
+
+                <ul class="contianer__menu-lista__tipos">
+
+                    <li class="lista__tipos__item">
+                        <img src="img/hatchback.webp" alt="carro estilo hatchback" class="menu__tipo-iconcar">
+                        <a>Hatchback</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/suv.webp" alt="carro estilo SUV" class="menu__tipo-iconcar">
+                        <a>SUV</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/sedan.webp" alt="carro estilo sedan" class="menu__tipo-iconcar">
+                        <a>Sedã</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/coupe.webp" alt="carro estilo coupe" class="menu__tipo-iconcar">
+                        <a>Coupe</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/convertible.webp" alt="carro estilo Conversível" class="menu__tipo-iconcar">
+                        <a>Conversível</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/pickup.webp" alt="carro estilo pickup" class="menu__tipo-iconcar">
+                        <a>Pick up</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/minivan.webp" alt="carro estilo Minivan" class="menu__tipo-iconcar">
+                        <a>Minivan</a>
+                    </li>
+
+                    <li class="lista__tipos__item">
+                        <img src="img/wagon.webp" alt="carro estilo Wagon" class="menu__tipo-iconcar">
+                        <a>Wagon</a>
+                    </li>
+                </ul>
+                </li>
+            </label>
+
+            
+            <label for="lista__menu__loc">
+                <li class="menu-lista-link"><p class="menu__ano-dropdown">Localização<i class="fa-solid fa-chevron-down"></i></p>
+                <input type="checkbox" id="lista__menu__loc" class="input__container__menu-loc">
+
+                    <ul class="container__lista-link__loc">
+                        <li class="lista-link-modelos">São Paulo</li>
+                    </ul>
+                </li>
+            </label>
+
+            <label for="lista__menu__mais-vendidos">
+                <span class="menu-lista-link menu-lista-link-arrow dropdown-marcas"><p class="menu__modelos-dropdown">Mais vendidos<i class="fa-solid fa-chevron-down"></i></p>
+                    <input type="checkbox" id="lista__menu__mais-vendidos" class="input__container__menu-mais-vendidos">
+
+                    <li class="lista__mais-vendidos">
+
+                        <ul class="container__lista-link__mais-vendidos">
+                            <li class="lista-link-modelos"><a class="lista-link-titulohonda">Seleção Kavak</a></li>
+                            <li class="lista-link-modelos">Hb20 2022</li>
+                            <li class="lista-link-modelos">Corolla 2022</li>
+                            <li class="lista-link-modelos">Onix 2022</li>
+                            <li class="lista-link-modelos">208 2022</li>
+                        </ul>
+
+                        <ul class="container__lista-link__mais-vendidos">
+                            <li class="lista-link-modelos"><a class="lista-link-titulohonda">Melhores Carros 2014 - 2015</a></li>
+                            <li class="lista-link-modelos">320l Sport 2014</li>
+                            <li class="lista-link-modelos">Cruze 2014</li>
+                            <li class="lista-link-modelos">Civic 2015</li>
+                            <li class="lista-link-modelos">Fusion 2015</li>
+                        </ul>
+
+                        <ul class="container__lista-link__mais-vendidos">
+                            <li class="lista-link-modelos"><a class="lista-link-titulohonda">Melhores Carros 2018 - 2021</a></li>
+                            <li class="lista-link-modelos">City 2018</li>
+                            <li class="lista-link-modelos">Rav4 2018</li>
+                            <li class="lista-link-modelos">Frontier 2021</li>
+                            <li class="lista-link-modelos">Hb20S 2021</li>
+                        </ul>
+
+                        <ul class="container__lista-link__mais-vendidos">
+                            <li class="lista-link-modelos"><a class="lista-link-titulohonda">Melhores Carros 2022 - 2023</a></li>
+                            <li class="lista-link-modelos">Corolla 2022</li>
+                            <li class="lista-link-modelos">Gol 2022</li>
+                            <li class="lista-link-modelos">Renegade 2022</li>
+                            <li class="lista-link-modelos">Eclipse 2023</li>
+                        </ul>
+
+                        <ul class="container__lista-link__mais-vendidos">
+                            <li class="lista-link-modelos"><a class="lista-link-titulohonda">Melhores Carros Por Preço</a></li>
+                            <li class="lista-link-modelos">Carro Baratos</li>
+                            <li class="lista-link-modelos">Carros até 100 mil</li>
+                            <li class="lista-link-modelos">Carros até 100 mil</li>
+                        </ul>
+
+                        <ul class="container__lista-link__mais-vendidos">
+                            <li class="lista-link-modelos"><a class="lista-link-titulohonda">Melhores Caminhonetes</a></li>
+                            <li class="lista-link-modelos">Caminhonete Ford</li>
+                            <li class="lista-link-modelos">Caminhonete Chevrolet</li>
+                            <li class="lista-link-modelos">Caminhonete Toyota</li>
+                            <li class="lista-link-modelos">Caminhonete Nissan</li>
+                            <div class="lista-links-mais-vendidos__vertodos"><a>Ver todos</a><i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </ul>
+                        
+                    </li>
+                </span>
+                
+                </span>
+            </label> 
+        </div> 
+    </div>    
+
+    <main>
+
+    </main>
+
+    
+
+    <script>
+        function enviarForm(){
+            let form = document.querySelector('.container_cabecalho-pesquisa');
+            form.submit();
+        }   
+    </script>    
+</body>
+
+</html>

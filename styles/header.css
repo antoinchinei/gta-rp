@@ -1,0 +1,809 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.cabecalho_logo-kavak {
+    width: 75px;
+    padding: 10px;
+}
+
+.container_menu {
+    display: none;
+    position: absolute;
+}
+
+.label__menu-botao {
+    padding: 10px;
+}
+
+.cabecalho_menu_botao:checked ~ .container_menu  {
+    display: block;
+    top: 60%;
+    width: 100%;
+    margin-block-start: 1rem;
+    background-color: var(--cor-branco);
+    margin: 16px 0 0;
+}
+
+.menu-lista-header {
+    margin: 0 0 1em;
+    font-family: 'Roboto';
+    font-weight: 400;
+    padding: 10px;
+}
+
+.cabecalho_menu-lista-titulo {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0.8em;
+}
+
+.cabecalho_menu-lista-texto {
+    font-family: 'Roboto';
+    font-size: 32px;
+}
+
+.cabecalho_menu-lista-botao {
+    font-family: 'Roboto';
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    padding: 0.8em;
+    margin: 1em 0 0 0;
+}
+
+.menu-lista-links {
+    font-family: 'Roboto';
+    font-size: 16px;
+    padding: 16px 10px;
+    display: flex;
+    color: #333333;    
+}
+
+.menu-lista-links  i{
+    margin-right: 5px;
+    color: var(--cor-cinza-escuro);
+}
+
+.link__vender-carro {
+    border-bottom: 0.5px solid #e5e5e5;
+}
+
+.menu-lista-link {
+    font-family: 'Roboto';
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    color: #333333;       
+}
+
+.menu-lista-link  i{
+    margin-right: 5px;
+    color: #3374db;
+}
+
+.menu__dropdown__sobre-nos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.menu__dropdown__ajuda {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+.menu-lista-titulo {
+    padding: 0.5em;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-cinza-claro
+    );
+}
+
+.cabecalho_menu_botao {
+    display: none;
+}
+
+.container_cabecalho-pesquisa {
+    margin: 0 1em;
+    border: solid 1px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border-color: #d0d1d1;
+}
+
+.cabecalho_pesquisa:focus, .cabecalho_pesquisa {
+    border: none;
+    width: 90%;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.menu-lista-link {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 16px 10px;
+}
+
+.lista-link-sobre {
+    position: relative;
+    display: inline-block;
+}
+
+.lista-label {
+    display: none;
+    /*background-color: #f9f9f9;*/
+    min-width: 165px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.lista-label {
+    width: 100%;
+    box-shadow: none;
+    text-align: left;
+    padding: 16px 0 0 13px;
+
+}
+
+.lista-label .lista-label-sobre {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.lista-label-sobre {
+    padding: 10px 24px;
+    display: block;
+}
+
+.input__menu-sobrenos:checked ~ .lista-label  {
+    display: block;  
+}
+
+.input__menu-sobrenos {
+    display: none;
+}
+
+
+.input__menu-sobrenos:active ~ .menu__dropdown__sobre-nos {
+    color: var(--cor-azul); 
+    font-weight: bold;
+}
+
+
+.lista-menu__ajuda {
+    display: none;
+}
+
+.input__menu-ajuda:checked ~ .lista-menu__ajuda {
+    display: block;
+    padding: 16px 0 0 13px;
+}
+
+.menu__dropdown__ajuda:checked, .menu__dropdown__ajuda:checked {
+    color: var(--cor-azul);
+    font-weight: bold;
+}
+
+.input__menu-ajuda {
+    display: none;
+}
+
+.menu__país-dropdown {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-pais-pais {
+    padding: 10px;
+}
+
+.lista__menu-pais {
+    display: none;
+    padding: 16px 0 0 13px;
+}
+
+.input__menu-pais:checked ~ .lista__menu-pais {
+    display: block;
+}
+
+.input__menu-pais {
+    display: none;
+}
+
+.menu-icon-arrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-label i{
+    padding: 12px;
+}
+
+.lista-label-topicos {
+    margin-right: 12px;
+    padding: 10px;
+}
+
+.lista-link-logohonda {
+    max-width: 24px;
+}
+
+.lista-link-modelos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-block-end: 0.5px solid #e9e9e9;
+}
+
+.lista-link- {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-link-titulohonda {
+    font-weight: 700;
+}
+
+.lista-link-marcas {
+    display: none;
+}
+
+.input__menu-modelos:checked ~ .lista-link-marcas {
+    display: block;
+    padding-top: 15px;
+}
+
+.input__menu-modelos {
+    display: none;
+}
+
+.lista-links-marcas__vertodos {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+    color: var(--cor-azul);
+    font-weight: bold;
+}
+
+.menu__ano-dropdown {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-link__ano {
+    display: none;
+}
+
+.input__menu-ano:checked ~ .lista-link__ano {
+    display: block;
+    padding-top: 15px;
+}
+
+.input__menu-ano {
+    display: none;
+}
+
+
+.menu__modelos-dropdown {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-link-modelos {
+    padding: 10px;
+}
+
+.menu__tipo-dropdown {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__tipo-iconcar {
+    width: 40px;
+}
+
+.lista__tipos {
+    display: none;
+}
+
+.lista__tipos__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-block-end: 0.5px solid #e9e9e9;
+}
+
+.input__menu-tipo:checked ~ .lista__tipos {
+    display: block;
+    padding-top: 15px;
+}
+
+.input__menu-tipo {
+    display: none;
+}
+
+.lista-link__loc {
+    display: none;
+}
+
+.input__menu-loc:checked ~ .lista-link__loc {
+    display: block;
+    padding-top: 15px;
+}
+
+.input__menu-loc {
+    display: none;
+}
+
+.lista-links-mais-vendidos__vertodos {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+    color: var(--cor-azul);
+    font-weight: bold;
+}
+
+.lista-link__mais-vendidos {
+    display: none;
+}
+
+.input__menu-mais-vendidos:checked ~ .lista-link__mais-vendidos {
+    display: block;
+    padding-top: 15px;
+}
+
+.input__menu-mais-vendidos {
+    display: none;
+}
+
+.cabecalho__desktop  {
+    display: none;
+}
+
+.container__cabecalho__menu-secundario {
+    display: none;
+}
+
+
+
+/* .container_desktop-pesquisa {
+    display: none;
+} */
+
+
+
+@media screen and (min-width:991px) {
+    .cabecalho {
+        margin: 16px 97px;
+    }
+
+    .cabecalho_logo-kavak {
+        width: 85px;
+        padding: 10px;
+    }
+    
+    .cabecalho__desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Roboto';
+        color: var(--cor-cinza-escuro);
+        gap: 0 1em;
+        text-decoration: none;
+    }
+
+    .container__cadastro {
+        display: flex;
+        align-items: center;
+    }
+
+    .container__cadastro__texto {
+        text-decoration: none;
+        padding-left: 10px;
+        color: var(--cor-cinza-escuro);
+    }
+
+    .cabecalho_menu {
+        display: none;
+    }
+
+    .container_menu {
+        display: none;
+    }
+
+    .menu__mobile {
+        display: none;
+    }
+
+
+    .fa-chevron-down {
+        color: #3374db;
+        margin: 5px;
+    }
+
+    .container__sobrenos {
+        position: relative;
+        display: inline-block;
+    }
+
+    .lista-sobrenos__item {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 130px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .input__container-sobrenos:checked ~ .lista-sobrenos__item {
+        display: block;
+    }
+
+    .input__container-sobrenos {
+        display: none;
+    }
+
+    .links__sobrenos {
+        padding: 0.5em;
+    }
+
+    .cabecalho-desktop__pais {
+        position: relative;
+        display: inline-block;
+    }
+
+    .cabecalho-lista__pais {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        right: 0;
+        top: 100%;
+    }
+
+    .input__pais-linguas:checked ~ .cabecalho-lista__pais {
+        display: block;
+    }
+
+    .input__pais-linguas {
+        display: none;
+    }
+
+    .lista-pais__link {
+        padding: 0.5em;
+    }
+
+    .fa-circle-user {
+        color: #1e3050;
+        width: 100%;
+    }
+
+    
+    .cabecalho_logo-kavak {
+        width: 75px;
+        padding: 10px;
+    }
+
+    .place_desktop-pesquisa {
+        border: none;
+        width: 90%;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+    }
+
+    .container__cabecalho_desktop {
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+    }
+
+    .container__cabecalho_secundario {
+        display: flex;
+    }
+
+    .container__cabecalho-secundario {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 89px;
+        box-shadow: 0 0.063rem 0.313rem #46464626, 0 0.125rem 0.125rem #46464626, 0 0.188rem 0.125rem -0.125rem #46464626;
+        height: 4rem;
+    }
+
+    .container__cabecalho-barrapesquisa {
+        width: 30%;
+    }
+
+    .container__cabecalho__menu-secundario {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .menu__filtrar {
+        list-style: none;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--cor-cinza-claro)
+    }
+
+    .menu-titulo__marcas-modelos {
+        list-style: none;
+        font-family: 'Roboto';
+        color: var(--cor-cinza-escuro);
+        position: relative;    
+    }
+
+    .lista-titulo__marcas-modelos:active {
+        font-weight: bold;
+        color: var(--cor-azul);
+    }
+    
+    .lista-link__tiulo__marcas-modelos {
+        color: var(--cor-preto);
+        font-weight: 600;
+    }
+
+    .lista-links__marcas-modelos {
+        display: none;
+        position: absolute;
+    }
+
+
+    .input__menu-modelos-marcas:checked ~ .lista-links__marcas-modelos {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        top: 130%;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        border-radius: 10px;
+        right: -462px;
+        width: 77vw;
+    }
+
+    .container__links__marcas-modelos {
+        width: 100%;
+    }
+
+
+
+    .lista-link-modelos__chevrolet {
+        margin-top: 5px;
+        padding-bottom: 13px;
+    }
+
+    .container__lista-link__ano {
+        display: none;
+        position: absolute;
+    }
+
+    .input__container__menu-ano:checked ~ .container__lista-link__ano {
+        display: block;
+        margin-top: 35px;
+        width: 15%;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        border-radius: 10px;
+
+    }
+
+    .menu__ano-dropdown:active {
+        color: var(--cor-azul);
+        font-weight: bold;
+    }
+
+    .contianer__menu-lista__tipos {
+        display: none;
+        position: absolute;
+    }
+
+    .input__container__menu-tipo:checked ~ .contianer__menu-lista__tipos {
+        display: block;
+        margin-top: 35px;
+        width: 13%;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        border-radius: 10px;
+    }
+
+    .menu__tipo-dropdown:active, .menu__tipo-dropdown:focus {
+        color: var(--cor-azul);
+        font-weight: bold;
+    }
+
+    .container__lista-link__loc {
+        display: none;
+        position: absolute;
+    }
+
+    .input__container__menu-loc:checked ~ .container__lista-link__loc {
+        display: block;
+        margin-top: 35px;
+        width: 10%;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        border-radius: 10px;
+    }
+
+    .menu__loc-dropdown:active, .menu__loc-dropdown:focus {
+        color: var(--cor-azul);
+        font-weight: bold;
+    }
+
+    .lista__mais-vendidos {
+        display: none;
+        position: absolute;
+    }
+
+    .input__container__menu-mais-vendidos:checked ~ .lista__mais-vendidos {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        margin-right: 45px;
+        width: 90%;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        border-radius: 10px;
+        right: 0;
+    }
+
+    /* .menu__modelos-dropdown:active + .menu__modelos-dropdown:focus {
+        color: var(--cor-azul);
+        font-weight: bold;
+    } */
+
+
+    .input__container__menu-mais-vendidos, .input__container__menu-loc, .input__container__menu-tipo, .input__container__menu-ano, .input__menu-modelos-marcas {
+        display: none;
+    }
+
+    .lista-titulo__modelos-marcas:active {
+        color: var(--cor-azul);
+        font-weight: bold;
+    }
+    
+}
+
+@media (min-width: 1400px) {
+    .cabecalho {
+        margin: 16px 97px;
+    }
+
+    .container__cabecalho-secundario {
+        padding: 0 89px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .cabecalho {
+        margin: 16px 130px;
+    }
+
+    .container__cabecalho-secundario {
+        padding: 0 116px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .cabecalho {
+        margin: 16px 160px;
+    }
+
+    .container__cabecalho-secundario {
+        padding: 0 150px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .cabecalho {
+        margin: 16px 210px;
+    }
+
+    .container__cabecalho-secundario {
+        padding: 0 200px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .cabecalho {
+        margin: 16px 300px;
+    }
+
+    .container__cabecalho-secundario {
+        padding: 0 290px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .cabecalho {
+        margin: 16px 350px;
+    }
+
+    .container__cabecalho-secundario {
+        padding: 0 340px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .cabecalho {
+        margin: 16px 420px;
+    }
+
+    .container__cabecalho-secundario {
+        padding: 0 410px;
+    }
+}
+
+@media (min-width: 2100px) {
+    .cabecalho {
+        margin: 16px 460px;
+    }
+
+    .container__cabecalho-secundario {
+        padding: 0 440px;
+    }
+}
+
+@media (min-width: 2200px) {
+    .cabecalho {
+        margin: 16px 490px;
+    }
+
+    .container__cabecalho-secundario {
+        padding: 0 470px;
+    }
+}
+
+@media (min-width: 2300px) {
+    .cabecalho {
+        margin: 16px 530px;
+    }
+
+    .container__cabecalho-secundario {
+        padding: 0 510px;
+    }
+}
